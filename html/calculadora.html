@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>MI Calculadora</h1>
+    </header>
+    <nav></nav>
+    <section>
+        <label for="idnumero1">Número 1:</label>
+        <input type="number" id="idnumero1">
+        <label for="idnumero2">Número 2:</label>
+        <input type="number" id="idnumero2">
+
+        <img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c325.png" id="idimg1" alt="No se encontro imagen">
+       
+
+        <button onclick="document.getElementById('idnumero1').style.background='blue'">Cambiar Estilo 1</button>
+        <button onclick="document.getElementById('idnumero2').style.background='red'">Cambiar Estilo 2</button>
+
+        <button onclick="document.getElementById('idimg1').src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1025px-Cat03.jpg'">Cambiar Imagen 1</button>
+        
+
+        <button onclick="document.getElementById('idResultado').innerHTML=1+6">Presentar Resultado</button>
+        <label id="idResultado"></label>
+
+
+        <button onclick="document.getElementById('iddiv').innerHTML='<button>Hola</button>'">Agregar Elemento</button>
+        <div id="iddiv">
+            <!--<button>Hola</button>-->
+
+
+        </div>
+
+    </section>
+    <footer>Todos los derechos reservados</footer>
+</body>
+</html>
