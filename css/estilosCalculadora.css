@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.calculadora-numeros{
+    display: grid;
+    grid-template-columns: repeat(3,80px);
+    background-color: blue;
+    padding: 15px 15px 0px 15px ;
+    border-radius: 15px;
+    
+}
+
+.col-2{
+    grid-column: span 3;
+}
+
+.calculadora-operaciones{
+    padding: 0px 15px 15px 15px ;
+    display: grid;
+    grid-template-columns: repeat(2,120px);
+    background-color: blue;
+    border-radius: 15px;
+
+}
+
+.calculadora-general{
+    display: grid;
+    grid-template-columns: repeat(1,270px);
+    background-color: blue;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px 20px rgb(94, 94, 94);
+    
+}
+
+h1{
+    padding-left: 45px;
+}
