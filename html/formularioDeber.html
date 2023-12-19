@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formularioDeber.css">
+
+</head>
+
+<body>
+    <div id="myApp" class="container">
+        <header>
+            <h1>Estudiante</h1>
+        </header>
+        <nav></nav>
+        <section>
+            <form class="form" @submit.prevent="agregarEstudiante">
+                <h2>Nuevo Estudiante</h2>
+                <p><input v-model="nombre" placeholder="Nombre"></p>
+                <p><input v-model="apellido" placeholder="Apellido"></p>
+                <p><input v-model="edad" type="number" placeholder="Edad"></p>
+                <p><input v-model="cedula" placeholder="Cédula"></p>
+                <p><input v-model="semestre" type="number" placeholder="Semestre"></p>
+                <div class="boton">
+                    <button type="submit">AGREGAR</button>
+                </div>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                        <th>Cédula</th>
+                        <th>Semestre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(estudiante, index) in lista" :key="index">
+                        <td>{{ estudiante.nombre }}</td>
+                        <td>{{ estudiante.apellido }}</td>
+                        <td>{{ estudiante.edad }}</td>
+                        <td>{{ estudiante.cedula }}</td>
+                        <td>{{ estudiante.semestre }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer></footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <script src="../js/formularioDeber.js"></script>
+</body>
+
+</html>
